@@ -59,6 +59,7 @@
         android:layout_alignLeft="@+id/linearLayout"
         android:layout_alignStart="@+id/linearLayout">
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,12 +74,46 @@
             android:id="@+id/art_desc" />
     </LinearLayout>
 
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/button_padding"
+        android:id="@+id/linear_layout_button"
+        android:layout_below="@+id/linearLayout1">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture image"
+            android:id="@+id/capture_artimage_button"
+            android:background="@drawable/round_corner"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Image"
+            android:background="@drawable/round_corner"
+            android:id="@+id/choose_artimage_button"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+
+
+    </LinearLayout>
+
+
     <LinearLayout
         android:id="@+id/linear_layout"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/linearLayout1"
+        android:layout_below="@+id/linear_layout_button"
         android:layout_centerHorizontal="true"
         android:padding="@dimen/activity_horizontal_margin"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"

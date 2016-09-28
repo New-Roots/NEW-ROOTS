@@ -43,7 +43,7 @@ public class CustomListAdapter extends ArrayAdapter<String>{
 
         title.setText(artHeading[position]);
         desc.setText(description[position]);
-        artPic.setBackgroundResource(imgageId[position]);
+        artPic.setImageResource(imgageId[position]);
         date.setText(postDate[position]);
 
 

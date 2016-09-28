@@ -22,15 +22,6 @@ public class LandActivity extends AppCompatActivity implements FragmentChanger{
 
 
 
-
-
-
-
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -151,6 +142,18 @@ public class LandActivity extends AppCompatActivity implements FragmentChanger{
 
     }
 
+    @Override
+    public void changeToSingleArticle(int imgID, String artHead, String artContent, String artDate) {
+        getSupportFragmentManager().
+                beginTransaction().
+                replace(R.id.root_layout,SingleTextArticleView.newInstance(imgID,artHead,artContent,artDate),"pic post page").
+                addToBackStack(null).
+                commit();
+
+
+
+    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -164,17 +167,17 @@ public class LandActivity extends AppCompatActivity implements FragmentChanger{
                 Toast.makeText(this,"img choosen",Toast.LENGTH_SHORT).show();
                 break;
             case CAPTURE_AUDIO:
-
+                Toast.makeText(this,"audio captured",Toast.LENGTH_SHORT).show();
                 break;
             case PICK_AUDIO:
-
+                Toast.makeText(this,"audio choosen",Toast.LENGTH_SHORT).show();
                 break;
 
             case CAPTURE_VIDEO:
-
+                Toast.makeText(this,"video captured",Toast.LENGTH_SHORT).show();
                 break;
             case PICK_VIDEO:
-
+                Toast.makeText(this,"video choosen",Toast.LENGTH_SHORT).show();
                 break;
 
 

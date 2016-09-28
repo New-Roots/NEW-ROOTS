@@ -27,6 +27,8 @@ public interface FragmentChanger {
     void captureVideo();
     void chooseVideo();
 
+    //single article view
+    void changeToSingleArticle(int imgID,String artHead,String artContent,String artDate);
 
 
 
