@@ -31,6 +31,16 @@ public interface FragmentChanger {
     void changeToSingleArticle(int imgID,String artHead,String artContent,String artDate);
 
 
+    //single product view
+    void changeToSingleProduct();
+    //order online
+    void changeToOrderOnline();
+
+    //order by phone
+    void changeToOrderByPhone();
+
+
+
 
 
 }

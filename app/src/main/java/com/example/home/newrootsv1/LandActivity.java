@@ -92,6 +92,9 @@ public class LandActivity extends AppCompatActivity implements FragmentChanger{
 
     }
 
+
+
+
     @Override
     public void capturePic() {
         Toast.makeText(this,"camera button",Toast.LENGTH_SHORT).show();
@@ -151,6 +154,36 @@ public class LandActivity extends AppCompatActivity implements FragmentChanger{
                 commit();
 
 
+
+    }
+
+    @Override
+    public void changeToSingleProduct() {
+        getSupportFragmentManager().
+                beginTransaction().
+                replace(R.id.root_layout,SingleProductView.newInstance(),"single product page").
+                addToBackStack(null).
+                commit();
+
+    }
+
+    @Override
+    public void changeToOrderOnline() {
+        getSupportFragmentManager().
+                beginTransaction().
+                replace(R.id.root_layout,ProductOrderOnline.newInstance(),"online order page").
+                addToBackStack(null).
+                commit();
+
+    }
+
+    @Override
+    public void changeToOrderByPhone() {
+        getSupportFragmentManager().
+                beginTransaction().
+                replace(R.id.root_layout,ProductOrderByPhone.newInstance(),"order by phone page").
+                addToBackStack(null).
+                commit();
 
     }
 
