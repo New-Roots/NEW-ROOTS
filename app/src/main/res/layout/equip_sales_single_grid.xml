@@ -18,7 +18,7 @@
         android:scaleType="fitCenter" />
 
     <RelativeLayout
-        android:background="@color/rnd_btn"
+        android:background="@color/listviewcolor1"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -31,7 +31,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Product Title Here"
             android:textStyle="bold|italic"
-            android:textColor="@color/btncolor"
+            android:textColor="@color/black"
             android:id="@+id/product_title"
             android:gravity="center"
             style="@style/TextAppearance.AppCompat.Subhead.Inverse"
@@ -50,9 +50,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="RS : 450 / piece"
             android:id="@+id/prod_price"
+            android:textColor="@color/black"
+            android:textStyle="italic"
             android:layout_below="@+id/product_desc"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
