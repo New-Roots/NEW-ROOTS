@@ -187,6 +187,36 @@ public class LandActivity extends AppCompatActivity implements FragmentChanger{
 
     }
 
+    @Override
+    public void changeToTravelFrag() {
+        getSupportFragmentManager().
+                beginTransaction().
+                replace(R.id.root_layout,TravelFrag.newInstance(),"travel frag").
+                addToBackStack(null).
+                commit();
+    }
+
+    @Override
+    public void changeToServicesFrag() {
+
+        getSupportFragmentManager().
+                beginTransaction().
+                replace(R.id.root_layout,ServicesFrag.newInstance(),"services frag").
+                addToBackStack(null).
+                commit();
+
+    }
+
+    @Override
+    public void changeToFullScreenTravel(String villageName, String placeName, String placeDesc, int imgId) {
+        getSupportFragmentManager().
+                beginTransaction().
+                replace(R.id.root_layout,SingleTravelDetailsFrag.newInstance(villageName,placeName,placeDesc,imgId),"pic post page").
+                addToBackStack(null).
+                commit();
+
+    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

@@ -40,6 +40,16 @@ public interface FragmentChanger {
     void changeToOrderByPhone();
 
 
+    //travel frag
+    void changeToTravelFrag();
+
+    //services frag
+    void changeToServicesFrag();
+
+    //travel full screen
+    void changeToFullScreenTravel(String villageName, String placeName, String placeDesc, int imgId);
+
+
 
 
 

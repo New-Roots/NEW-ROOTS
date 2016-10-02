@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.example.home.newrootsv1.AboutUsFrag;
 import com.example.home.newrootsv1.VideoLessonsFrag;
-import com.example.home.newrootsv1.ServicesPostFrag;
+import com.example.home.newrootsv1.ServicesAndTravelHostFrag;
 import com.example.home.newrootsv1.EquipSalesFrag;
 import com.example.home.newrootsv1.HomeFrag;
 import com.example.home.newrootsv1.ArticlesFrag;
@@ -41,7 +41,7 @@ public class Pager extends FragmentStatePagerAdapter {
             case 3:
                 return new VideoLessonsFrag();
             case 4:
-                return new ServicesPostFrag();
+                return new ServicesAndTravelHostFrag();
             case 5:
                 return new AboutUsFrag();
 
