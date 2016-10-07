@@ -50,6 +50,11 @@ public interface FragmentChanger {
     void changeToFullScreenTravel(String villageName, String placeName, String placeDesc, int imgId);
 
 
+    //services full screen
+    void changeToFullScreenServices(String serviceHead, String date, int imgId);
+
+    //services post frag
+    void changeToServicesPostFrag();
 
 
 

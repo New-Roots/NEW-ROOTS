@@ -1,42 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:elevation="40dp"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:background="@color/listviewcolor1" >
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/card_view"
+    <ImageView
+        android:id="@+id/service_img_list"
         android:layout_gravity="center"
-        android:layout_width="fill_parent"
-        android:layout_height="300dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_group_black_48dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        card_view:cardCornerRadius="2dp"
-        card_view:contentPadding="10dp">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tour_place_pic"
-            android:src="@drawable/tour1"
-            android:background="@color/listviewcolor1"
-            android:scaleType="fitXY"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
-
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome to the ---------"
-            android:textColor="@color/black"
-            android:textStyle="bold|italic"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:gravity="center"
-            android:padding="@dimen/button_padding"
-            android:background="#8888"
-            android:id="@+id/tour_heading" />
+            android:lineSpacingExtra="5dp"
+            android:id="@+id/service_heading_list"
+            android:text="Services for ......."
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/services_desc_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="      This services is based on .................."
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Sept 24 2016"
+            android:id="@+id/services_date_list"
+            android:gravity="right"/>
+    </LinearLayout>
+</LinearLayout>
 
 
-</RelativeLayout>

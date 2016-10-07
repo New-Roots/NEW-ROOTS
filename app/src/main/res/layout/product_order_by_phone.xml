@@ -12,7 +12,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Product Order by phone page"
-            android:id="@+id/textView3"
+            android:id="@+id/text_service_post_head"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:padding="@dimen/activity_horizontal_margin"
@@ -28,7 +28,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Contact Details"
         android:id="@+id/text_contact_details"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/text_service_post_head"
         android:layout_centerHorizontal="true" />
 
 

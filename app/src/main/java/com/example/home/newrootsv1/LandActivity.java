@@ -211,10 +211,29 @@ public class LandActivity extends AppCompatActivity implements FragmentChanger{
     public void changeToFullScreenTravel(String villageName, String placeName, String placeDesc, int imgId) {
         getSupportFragmentManager().
                 beginTransaction().
-                replace(R.id.root_layout,SingleTravelDetailsFrag.newInstance(villageName,placeName,placeDesc,imgId),"pic post page").
+                replace(R.id.root_layout,SingleTravelDetailsFrag.newInstance(villageName,placeName,placeDesc,imgId),"travel full screen").
                 addToBackStack(null).
                 commit();
 
+    }
+
+    @Override
+    public void changeToFullScreenServices(String serviceHead, String date, int imgId) {
+        getSupportFragmentManager().
+                beginTransaction().
+                replace(R.id.root_layout,SingleServicesDetailFrag.newInstance(serviceHead,date,imgId),"services full screen").
+                addToBackStack(null).
+                commit();
+    }
+
+    @Override
+    public void changeToServicesPostFrag() {
+        Toast.makeText(this,"clicked",Toast.LENGTH_LONG).show();
+        getSupportFragmentManager().
+                beginTransaction().
+                replace(R.id.root_layout,ServicesPostFrag.newInstance(),"services post frag").
+                addToBackStack(null).
+                commit();
     }
 
 
